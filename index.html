@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizli Portret Tablo | Çiçəklərin içində gizlənən üz</title>
+<meta name="description" content="Sevdiyiniz insanın şəkli çiçək kompozisiyasına gizlədilir. Üslubu seçin, WhatsApp-da dizaynları görün.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf9fc;--card:#fff;--ink:#241a2c;--mute:#6c6275;--line:#e4dce9;--acc:#7b2a5c;--acc-ink:#fff;--ok:#1f7a4d}
+@media (prefers-color-scheme:dark){:root{--bg:#171119;--card:#221a26;--ink:#f3edf6;--mute:#b2a6bb;--line:#3a2f40;--acc:#d27bb0;--acc-ink:#1b1020;--ok:#6fd1a0}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Manrope,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.1;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:18px 0}
+.brand{font:700 1.5rem "Cormorant Garamond",Georgia,serif}
+.hero{display:grid;gap:32px;grid-template-columns:1.1fr .9fr;align-items:center;padding:40px 0 56px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:700}
+.hero p{color:var(--mute);max-width:46ch;margin:18px 0 26px}
+.btn{display:inline-block;background:var(--acc);color:var(--acc-ink);font:700 1rem Manrope,sans-serif;padding:14px 26px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.btn[aria-disabled=true]{opacity:.45;pointer-events:none}
+.art{aspect-ratio:1;border-radius:46% 54% 50% 50%/52% 46% 54% 48%;background:radial-gradient(circle at 28% 30%,#e8668f 0,#e8668f 14%,transparent 42%),radial-gradient(circle at 70% 26%,#f6c453 0,#f6c453 12%,transparent 40%),radial-gradient(circle at 62% 72%,#8a5cc4 0,#8a5cc4 16%,transparent 46%),radial-gradient(circle at 24% 76%,#3f8f6a 0,#3f8f6a 13%,transparent 42%),#2a1630;box-shadow:0 20px 50px rgba(60,20,70,.25)}
+section{padding:40px 0}
+section h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:8px}
+.sub{color:var(--mute);margin:0 0 24px}
+.steps{list-style:decimal;padding-left:1.3em;display:grid;gap:10px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.st{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:0;text-align:left;cursor:pointer;overflow:hidden;color:inherit;font:inherit}
+.st:focus-visible,.opt:focus-within{outline:3px solid var(--acc);outline-offset:2px}
+.st[aria-pressed=true]{border-color:var(--acc);box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 30%,transparent)}
+.sw{aspect-ratio:4/5;position:relative}
+.sw img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.st b{display:block;padding:10px 12px 0;font-size:.95rem}
+.st small{display:block;padding:2px 12px 12px;color:var(--mute);font-size:.8rem;line-height:1.35}
+.count{font-weight:600;margin-top:14px}
+.opts{display:grid;gap:10px;max-width:520px}
+.opt{display:flex;justify-content:space-between;gap:12px;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer}
+.opt:has(input:checked){border-color:var(--acc)}
+.opt input{accent-color:var(--acc)}
+.opt span:first-child{display:flex;gap:10px;align-items:center}
+.sum{margin-top:22px;max-width:520px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:18px}
+.sum p{margin:4px 0;color:var(--mute)}
+.tot{font:700 2rem "Cormorant Garamond",Georgia,serif;color:var(--ink)}
+footer{padding:36px 0 56px;color:var(--mute);font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.art{max-width:300px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="brand" id="brand"></div></header>
+
+<div class="hero">
+<div>
+<h1>Üzü çiçəklərin içində gizlənən tablo</h1>
+<p>Sevdiyiniz insanların şəkli çiçək kompozisiyasına gizlədilir. İlk baxışda tablo görünür, gözünüzü qısanda isə portret ortaya çıxır.</p>
+<a class="btn" href="#uslub">Üslub seçin</a>
+</div>
+<div class="art" role="img" aria-label="Çiçək rəngləri ilə abstrakt kompozisiya"></div>
+</div>
+
+<section>
+<h2>Necə işləyir?</h2>
+<ol class="steps">
+<li>Aşağıdan 3-ə qədər çiçək üslubu və ölçünü seçin.</li>
+<li>Seçiminiz hazır mesaj kimi WhatsApp-a düşür, orada fotonuzu göndərirsiniz.</li>
+<li>Sizin üçün hazırlanan dizaynları WhatsApp-da görüb ən çox bəyəndiyinizi seçirsiniz.</li>
+<li>Yalnız təsdiqlədiyiniz dizayn çap olunur.</li>
+</ol>
+</section>
+
+<section id="uslub">
+<h2>9 çiçək üslubu</h2>
+<p class="sub">Rəngi və əhval-ruhiyyəsi sizə yaxın olanı seçin. Nümunələr rəng palitrasını göstərir, real dizaynlar fotonuza görə hazırlanır.</p>
+<div class="grid" id="styles"></div>
+<div class="count" id="count"></div>
+</section>
+
+<section id="sifaris">
+<h2>Ölçü və qiymət</h2>
+<p class="sub">Ölçünü seçin, qiymət aşağıda görünəcək.</p>
+<div class="opts" id="opts"></div>
+<div class="sum">
+<p id="sumStyles">Üslub seçilməyib</p>
+<p id="sumOpt">Seçim edilməyib</p>
+<div class="tot" id="tot">0</div>
+<p style="margin:12px 0 16px">Qiymət sifarişdən əvvəl WhatsApp-da təsdiqlənir.</p>
+<a class="btn" id="wa" href="#" aria-disabled="true" target="_blank" rel="noopener">WhatsApp-da davam et</a>
+</div>
+</section>
+
+<footer>© <span id="yr"></span> <span id="brand2"></span></footer>
+</div>
+
+<script>
+// ===== BURADA DƏYİŞİN =====
+const CFG={
+  brand:"Gizli Portret",
+  wa:"994500000000",          // WhatsApp nömrəniz, + və boşluq olmadan
+  cur:"AZN",
+  max:3,                      // müştəri neçə üslub seçə bilər
+  digital:30,                 // Rəqəmsal faylın qiyməti. NÜMUNƏDİR, öz qiymətinizi yazın
+  sizes:[
+    {label:"40×40 sm",price:55},
+    {label:"50×50 sm",price:65},
+    {label:"60×60 sm",price:79},
+    {label:"80×80 sm",price:109},
+    {label:"100×100 sm Premium",price:169},
+    {label:"120×120 sm Premium",price:239}
+  ]
+};
+// [ad, təsvir, fon, rəng1, rəng2, rəng3]
+// Öz şəkillərinizi göstərmək üçün: img/uslub-1.jpg ... img/uslub-9.jpg (varsa avtomatik görünür)
+const S=[
+["Qızılgül Bağı","Dolğun qırmızı və çəhrayı güllər","#2a0f1a","#d6335a","#f29bb0","#6b8f4e"],
+["Lavanda Düzü","Bənövşəyi çalarlı sakit tarla","#251a38","#9b7bd6","#d5c5f2","#7fa06a"],
+["Günəbaxan Tarlası","Parlaq sarı, isti yay əhvalı","#2d2410","#f2b705","#ffd95e","#5f7d2b"],
+["Ağ Pion","Yumşaq ağ və krem çiçəklər","#3a3340","#fff4f0","#e8d6dc","#9fb58a"],
+["Payız Dalyası","Narıncı, qəhvəyi və bordo tonlar","#2b160e","#e0782a","#a8322b","#d9a441"],
+["Albalı Çiçəyi","Çəhrayı budaqlar, bahar havası","#2e1a28","#f7a8c4","#ffd6e4","#7a5a63"],
+["Mavi Ortancalar","Sərin göy və mavi çalarlar","#12213a","#4f86d9","#a7c8f5","#6aa38c"],
+["Gecə Bağı","Qara fonda qızılı və tünd çiçəklər","#0b0a0f","#c9a24a","#7b2a5c","#2f6b5a"],
+["Vintaj Rəsm","Köhnə yağlı boya hissi, solğun tonlar","#2f2a22","#b89a6a","#9a6b6b","#6f7f5c"]
+];
+const sel=new Set();let opt=null;
+const $=id=>document.getElementById(id);
+$("brand").textContent=$("brand2").textContent=CFG.brand;$("yr").textContent=new Date().getFullYear();
+
+const g=$("styles");
+S.forEach((s,i)=>{
+  const b=document.createElement("button");b.type="button";b.className="st";b.setAttribute("aria-pressed","false");
+  b.innerHTML='<div class="sw" style="background:radial-gradient(circle at 25% 28%,'+s[3]+' 0,'+s[3]+' 15%,transparent 46%),radial-gradient(circle at 72% 34%,'+s[4]+' 0,'+s[4]+' 14%,transparent 44%),radial-gradient(circle at 48% 78%,'+s[5]+' 0,'+s[5]+' 16%,transparent 48%),'+s[2]+'"><img alt="'+s[0]+'" src="img/uslub-'+(i+1)+'.jpg" style="display:none" onload="this.style.display=\'block\'"></div><b>'+s[0]+'</b><small>'+s[1]+'</small>';
+  b.onclick=()=>{
+    if(sel.has(i)){sel.delete(i)}else if(sel.size<CFG.max){sel.add(i)}
+    b.setAttribute("aria-pressed",sel.has(i));upd();
+  };
+  g.appendChild(b);
+});
+
+const o=$("opts");
+const list=[{label:"Yalnız rəqəmsal fayl",price:CFG.digital}].concat(CFG.sizes);
+list.forEach(x=>{
+  const l=document.createElement("label");l.className="opt";
+  l.innerHTML='<span><input type="radio" name="o"> '+x.label+'</span><span><b>'+x.price+' '+CFG.cur+'</b></span>';
+  l.querySelector("input").onchange=()=>{opt=x;upd()};
+  o.appendChild(l);
+});
+
+function upd(){
+  const names=[...sel].map(i=>S[i][0]);
+  $("count").textContent=sel.size+" / "+CFG.max+" üslub seçilib";
+  $("sumStyles").textContent=names.length?"Üslublar: "+names.join(", "):"Üslub seçilməyib";
+  $("sumOpt").textContent=opt?"Seçim: "+opt.label:"Seçim edilməyib";
+  $("tot").textContent=(opt?opt.price:0)+" "+CFG.cur;
+  const ok=names.length>0&&opt,a=$("wa");a.setAttribute("aria-disabled",!ok);
+  if(ok){
+    const m="Salam! Gizli portret tablo sifariş etmək istəyirəm.\nÜslublar: "+names.join(", ")+"\nSeçim: "+opt.label+"\nQiymət: "+opt.price+" "+CFG.cur+"\nŞəkli göndərirəm.";
+    a.href="https://wa.me/"+CFG.wa+"?text="+encodeURIComponent(m);
+  }else a.removeAttribute("href");
+}
+upd();
+</script>
+</body>
+</html>
