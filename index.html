@@ -296,7 +296,7 @@ window.IM=[
 // ===== Ayarlar =====
 const CFG={
   brand:"Gizli Portret",
-  wa:"994709331108",          // WhatsApp nömrəsi, + və boşluq olmadan
+  wa:"",                      // WhatsApp nömrəsi, + və boşluq olmadan (boşdursa sifariş düyməsi bağlı qalır)
   cur:"AZN",
   max:3,                      // müştəri neçə üslub seçə bilər
   digital:30,                 // Rəqəmsal faylın qiyməti
@@ -376,7 +376,7 @@ function upd(){
   const custom=sel.has(CI),wish=$("wish").value.trim();
   $("mine").hidden=!custom;
   $("wcnt").textContent=$("wish").value.length+" / 500"+(custom&&!wish?" · istəyinizi yazın":"");
-  const ok=names.length>0&&opt&&(!custom||wish.length>0),a=$("wa");a.setAttribute("aria-disabled",!ok);
+  const ok=!!CFG.wa&&names.length>0&&opt&&(!custom||wish.length>0),a=$("wa");a.setAttribute("aria-disabled",!ok);
   if(ok){
     const m="Salam! Gizli portret tablo sifariş etmək istəyirəm.\nÜslublar: "+names.join(", ")+(custom?"\nÖz istəyim: "+wish:"")+"\nSeçim: "+opt.label+"\nQiymət: "+opt.price+" "+CFG.cur+"\nŞəkli göndərirəm.";
     a.href="https://wa.me/"+CFG.wa+"?text="+encodeURIComponent(m);
